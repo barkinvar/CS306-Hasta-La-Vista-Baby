@@ -36,6 +36,10 @@ The data was cleaned and preprocessed to remove missing values and ensure consis
 
 The data was analyzed using Microsoft Excel
 
+## ER Graph:
+![Screenshot 2023-03-13 225838](https://user-images.githubusercontent.com/81559141/224802682-4f957fe7-84d0-4478-a4de-c2dcea6bc6d3.png)
+
+
 ## Usage
 The dataset is private and will remain private for the duration of the CS306 course.
 
@@ -45,6 +49,24 @@ The dataset is private and will remain private for the duration of the CS306 cou
 - Ahmet Emre Eser
 - Beste Bayhan
 - Ecem Akın
+
+## References
+
+https://ourworldindata.org/grapher/share-deaths-smoking
+
+https://ourworldindata.org/grapher/prevalence-of-tobacco-use-sdgs
+
+https://ourworldindata.org/covid-cases
+
+https://ourworldindata.org/grapher/number-of-deaths-by-risk-factor
+
+https://ourworldindata.org/world-population-growth
+
+https://ourworldindata.org/grapher/population-density?tab=table
+
+https://ourworldindata.org/life-expectancy
+
+
 
 ## Acknowledgments
 We would like to thank the organizations that provided the data used in this project, including the World Health Organization, United Nations, the Centers for Disease Control and Prevention, IHME.
