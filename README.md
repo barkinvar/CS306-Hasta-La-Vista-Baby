@@ -2,7 +2,7 @@
 
 # Smoking Percentage in Adults Dataset
 
-This project provides datasets related to smoking prevalence among adults in various countries. The datasets include information about smoking rates, demographics, and other related factors.
+The primary focus of our database is tobacco use in cigarette form and its effects on the overall life expectancy of the population. We are planning to analyze the data by finding correlations between geographical location and time data. 
 
 ## Data Sources
 The data was collected from the [Our World in Data](https://ourworldindata.org)
