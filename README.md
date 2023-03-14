@@ -2,7 +2,7 @@
 
 # Smoking Percentage in Adults Dataset
 
-This project provides datasets related to smoking prevalence among adults in various countries. The datasets include information about smoking rates, demographics, and other related factors.
+The primary focus of our database is tobacco use in cigarette form and its effects on the overall life expectancy of the population. We are planning to analyze the data by finding correlations between geographical location and time data. 
 
 ## Data Sources
 The data was collected from the [Our World in Data](https://ourworldindata.org)
@@ -11,33 +11,43 @@ The data was collected from the [Our World in Data](https://ourworldindata.org)
 The dataset includes the following information:
 
 Country
+
 Year
+
 Age Group
+
 Life Expectancy
+
 Smoking Prevalence (%)
+
 Tobacco Usage
+
 Population
+
 Population Density
 
-## Data Files
-The following files are available:
-
-smoking_prevalence.csv: (data hazir oldukdan sonra ismi buraya eklenicek)
-
-This file contains the smoking prevalence data for various countries.
 
 
 ## Data Cleaning
 
-The data was cleaned and preprocessed to remove missing values and ensure consistency in the format of the data.
+The data was cleaned and preprocessed with excel software, especially the power pivot extension to clear and condense data we collated from different ourworldindata.com datasets. We decided to restrict the datasets to the year range 1980 - 2021 as most of the datasets don’t contain any data prior to 1980. We also removed all data pertaining to any dependent county of an independent power such as Bahamas (US territory) as well as data related to any general region (such as world or Africa). This is a measure to prevent data redundancy as any data pertaining to offshore territories will also be contained within the data of the parent country and any data pertaining to a general geographical region could be calculated from the data of all countries contained within the region.
 
 
-## Data Analysis
 
-The data was analyzed using Microsoft Excel
-
-## ER Graph:
+## ER Graph
 ![Screenshot 2023-03-13 225838](https://user-images.githubusercontent.com/81559141/224802682-4f957fe7-84d0-4478-a4de-c2dcea6bc6d3.png)
+
+## Rationale for the ER diagram
+
+Our ER diagram is centered around the country entity which contains the country code attribute as the primary key. Connected to the country entity via the “located” relationship is the continent entity. The only attribute within the continent entity is the code attribute which will be the primary key of the continent entity. The “located” relationship is bound with a thick line on the continent entity side signifying a total participation constraint on the continent entity. Hence each continent in the database cannot be bound with any less than 1 country via the “located” relationship. 
+
+Another constraint on the “located” relationship is a key constraint on the country entity side which is denoted by an arrow. The key constraint ensures that any instance of the country entity can at most engage in a “located” relationship with 1 continent. There are many exceptions to this rule, such as Turkey, however we imposed this constraint as a simplifying measure as recording every offshore territory of an independent nation would impose a storage burden on our database. Instead every nation will be set up in the relationship with the continent its capital is located on. The “located” relationship also has a participation constraint on the country entity side which ensures that every instance of the country entity is engaged in the relationship with at least one continent. This bolsters the integrity of the data as logically every country has to be located on at least one continent. 
+
+The country entity has 3 weak entities connected to itself which is denoted by the bold frame around the entities as well as the relationships that bind the weak entities to the country entity. The weak entities belonging to the country entity could be listed as: population, smokers and smoking caused deaths. We decided to bind these entities to the country entity since these notions cannot exist without belonging to a country. We decided not to keep these as attributes of the country entity as our dataset involves a lot of different values which could be logically gathered around the weak entities listed above. 
+
+
+## Description of Entities and Attributes
+![Screenshot 2023-03-14 145648](https://user-images.githubusercontent.com/81559141/224981314-c59778d5-0e6e-4ff7-970e-4ed9e9b873b2.png)
 
 
 ## Usage
