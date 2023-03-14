@@ -11,20 +11,21 @@ The data was collected from the [Our World in Data](https://ourworldindata.org)
 The dataset includes the following information:
 
 Country
+
 Year
+
 Age Group
+
 Life Expectancy
+
 Smoking Prevalence (%)
+
 Tobacco Usage
+
 Population
+
 Population Density
 
-## Data Files
-The following files are available:
-
-smoking_prevalence.csv: (data hazir oldukdan sonra ismi buraya eklenicek)
-
-This file contains the smoking prevalence data for various countries.
 
 
 ## Data Cleaning
@@ -32,10 +33,6 @@ This file contains the smoking prevalence data for various countries.
 The data was cleaned and preprocessed with excel software, especially the power pivot extension to clear and condense data we collated from different ourworldindata.com datasets. We decided to restrict the datasets to the year range 1980 - 2021 as most of the datasets don’t contain any data prior to 1980. We also removed all data pertaining to any dependent county of an independent power such as Bahamas (US territory) as well as data related to any general region (such as world or Africa). This is a measure to prevent data redundancy as any data pertaining to offshore territories will also be contained within the data of the parent country and any data pertaining to a general geographical region could be calculated from the data of all countries contained within the region.
 
 
-
-## Data Analysis
-
-The data was analyzed using Microsoft Excel
 
 ## ER Graph
 ![Screenshot 2023-03-13 225838](https://user-images.githubusercontent.com/81559141/224802682-4f957fe7-84d0-4478-a4de-c2dcea6bc6d3.png)
