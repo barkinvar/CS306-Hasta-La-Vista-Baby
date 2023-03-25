@@ -1,4 +1,4 @@
-# Data Structures CS Course Project: Hasta La Vista Baby
+# CS306 Database Systems Course Project: Hasta La Vista Baby
 
 # Smoking Percentage in Adults Dataset
 
