@@ -35,7 +35,7 @@ The data was cleaned and preprocessed with excel software, especially the power 
 
 
 ## ER Diagram
-!(https://github.com/barkinvar/CS306-Hasta-La-Vista-Baby/blob/master/ER%20Diagram%20(latest).png)
+![ER Diagram - Step 1 Updated](https://github.com/barkinvar/CS306-Hasta-La-Vista-Baby/blob/master/ER%20Diagram%20(latest).png)
 ![Screenshot 2023-03-13 225838](https://user-images.githubusercontent.com/81559141/224802682-4f957fe7-84d0-4478-a4de-c2dcea6bc6d3.png)
 
 ## Rationale for the ER diagram
