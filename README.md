@@ -26,6 +26,10 @@ Population
 
 Population Density
 
+Tobacco Tax
+
+Depression Rate
+
 
 
 ## Data Cleaning
