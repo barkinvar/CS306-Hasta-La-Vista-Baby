@@ -80,6 +80,11 @@ https://ourworldindata.org/grapher/population-density?tab=table
 
 https://ourworldindata.org/life-expectancy
 
+https://ourworldindata.org/smoking-big-problem-in-brief
+
+https://ourworldindata.org/mental-health
+
+https://ourworldindata.org/taxation
 
 
 ## Acknowledgments
