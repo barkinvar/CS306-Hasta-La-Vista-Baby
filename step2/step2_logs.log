@@ -1,0 +1,680 @@
+[1, 18:47:18] Could not connect, server may not be running.: Unable to connect to localhost
+[2, 18:49:14] Create Table test(
+id INT Not NULL,
+name varchar(10),
+primary key(id)
+
+): Running...
+[2, 18:49:14] Create Table test(
+id INT Not NULL,
+name varchar(10),
+primary key(id)
+
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[3, 18:49:37] Create Table test(
+id INT Not NULL,
+name varchar(10),
+primary key(id)
+
+): Running...
+[3, 18:49:37] Create Table test(
+id INT Not NULL,
+name varchar(10),
+primary key(id)
+
+): 0 row(s) affected
+[4, 18:51:04] Insert Into test Values('2', 'bark'): Running...
+[4, 18:51:04] Insert Into test Values('2', 'bark'): 1 row(s) affected
+[5, 18:54:03] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[5, 18:54:03] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[5, 18:54:03] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 1 row(s) returned
+[1, 18:54:20] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[1, 18:54:20] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[1, 18:54:20] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 1 row(s) returned
+[1, 18:54:53] SELECT * FROM test
+LIMIT 0, 1000
+: Running...
+[1, 18:54:53] SELECT * FROM test
+LIMIT 0, 1000
+: Fetching...
+[1, 18:54:53] SELECT * FROM test
+LIMIT 0, 1000
+: 1 row(s) returned
+[1, 18:56:00] SELECT * FROM test
+LIMIT 0, 1000
+: Running...
+[1, 18:56:00] SELECT * FROM test
+LIMIT 0, 1000
+: Fetching...
+[1, 18:56:00] SELECT * FROM test
+LIMIT 0, 1000
+: 1 row(s) returned
+[2, 19:00:49] INSERT INTO test VALUES('1'): Running...
+[2, 19:00:49] INSERT INTO test VALUES('1'): Error Code: 1136. Column count doesn't match value count at row 1
+[3, 19:01:16] INSERT INTO test VALUE('1'): Running...
+[3, 19:01:16] INSERT INTO test VALUE('1'): Error Code: 1136. Column count doesn't match value count at row 1
+[4, 19:01:23] INSERT INTO test VALUES('1', null): Running...
+[4, 19:01:23] INSERT INTO test VALUES('1', null): 1 row(s) affected
+[5, 19:01:32] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[5, 19:01:32] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[5, 19:01:32] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 2 row(s) returned
+[6, 19:01:47] INSERT INTO test VALUES('1', 'ahmet'): Running...
+[6, 19:01:47] INSERT INTO test VALUES('1', 'ahmet'): Error Code: 1062. Duplicate entry '1' for key 'test.PRIMARY'
+[7, 19:03:15] UPDATE test SET name = 'Ahmet' WHERE id = '1': Running...
+[7, 19:03:15] UPDATE test SET name = 'Ahmet' WHERE id = '1': 1 row(s) affected
+Rows matched: 1  Changed: 1  Warnings: 0
+[8, 19:03:19] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[8, 19:03:19] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[8, 19:03:19] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 2 row(s) returned
+[9, 19:04:42] INSERT INTO test Values('3', 'Mehmet'): Running...
+[9, 19:04:42] INSERT INTO test Values('3', 'Mehmet'): 1 row(s) affected
+[10, 19:04:46] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[10, 19:04:46] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[10, 19:04:46] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 3 row(s) returned
+[11, 19:04:50] UPDATE test SET name = 'Ali' WHERE id = '1': Running...
+[11, 19:04:50] UPDATE test SET name = 'Ali' WHERE id = '1': 1 row(s) affected
+Rows matched: 1  Changed: 1  Warnings: 0
+[12, 19:04:50] INSERT INTO test Values('3', 'Mehmet'): Running...
+[12, 19:04:50] INSERT INTO test Values('3', 'Mehmet'): Error Code: 1062. Duplicate entry '3' for key 'test.PRIMARY'
+[13, 19:04:54] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Running...
+[13, 19:04:54] SELECT * FROM sys.test
+LIMIT 0, 1000
+: Fetching...
+[13, 19:04:54] SELECT * FROM sys.test
+LIMIT 0, 1000
+: 3 row(s) returned
+[1, 16:49:47] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 12:40:24] Could not connect, server may not be running.: Unable to connect to localhost
+[1, 19:32:22] Apply changes to cs306: Applying object changes ...
+[1, 19:32:25] Applying changes to cs306...: 
+[1, 19:32:26] : Changes applied to cs306
+[1, 19:32:27] Apply changes to cs306: Changes applied
+[2, 19:36:30] CREATE TABLE test(num INT,PRIMARY KEY(num)): Running...
+[2, 19:36:30] CREATE TABLE test(num INT,PRIMARY KEY(num)): 0 row(s) affected
+[3, 19:36:44] SELECT * FROM test
+LIMIT 0, 1000
+: Running...
+[3, 19:36:44] SELECT * FROM test
+LIMIT 0, 1000
+: Fetching...
+[3, 19:36:44] SELECT * FROM test
+LIMIT 0, 1000
+: 0 row(s) returned
+[4, 19:37:02] INSERT INTO TEST VALUES(1): Running...
+[4, 19:37:02] INSERT INTO TEST VALUES(1): 1 row(s) affected
+[5, 19:37:02] SELECT * FROM test
+LIMIT 0, 1000
+: Running...
+[5, 19:37:02] SELECT * FROM test
+LIMIT 0, 1000
+: Fetching...
+[5, 19:37:02] SELECT * FROM test
+LIMIT 0, 1000
+: 1 row(s) returned
+[6, 19:37:16] DROP TABLE TEST: Running...
+[6, 19:37:16] DROP TABLE TEST: 0 row(s) affected
+[7, 20:41:24] DROP DATABASE `cs306`: Running...
+[7, 20:41:24] DROP DATABASE `cs306`: 0 row(s) affected
+[8, 20:41:33] Apply changes to CS306: Applying object changes ...
+[8, 20:41:37] Applying changes to CS306...: 
+[8, 20:41:37] : Changes applied to CS306
+[8, 20:41:41] Apply changes to CS306: Changes applied
+[9, 20:41:54] use main_db: Running...
+[9, 20:41:54] use main_db: Error Code: 1049. Unknown database 'main_db'
+[10, 20:42:02] use main_db: Running...
+[10, 20:42:02] use main_db: Error Code: 1049. Unknown database 'main_db'
+[11, 20:42:16] SET SQL_SAFE_UPDATES = 0: Running...
+[11, 20:42:16] SET SQL_SAFE_UPDATES = 0: 0 row(s) affected
+[12, 20:42:16] CREATE TABLE country(
+
+country_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50) NOT NULL,
+
+PRIMARY KEY (country_code)
+): Running...
+[12, 20:42:16] CREATE TABLE country(
+
+country_code VARCHAR(10) NOT NULL,
+country_name VARCHAR(50) NOT NULL,
+
+PRIMARY KEY (country_code)
+): 0 row(s) affected
+[13, 20:42:16] CREATE TABLE continent(
+
+continent_code VARCHAR(10) NOT NULL,
+continent_name VARCHAR(50) NOT NULL,
+
+PRIMARY KEY (continent_code)
+): Running...
+[13, 20:42:16] CREATE TABLE continent(
+
+continent_code VARCHAR(10) NOT NULL,
+continent_name VARCHAR(50) NOT NULL,
+
+PRIMARY KEY (continent_code)
+): 0 row(s) affected
+[14, 20:42:16] CREATE TABLE population(
+
+country_code VARCHAR(10) NOT NULL,
+pop_year INT NOT NULL,
+life_exp INT,
+num_pop INT,
+pop_density REAL,
+
+PRIMARY KEY (country_code, pop_year),
+Foreign Key (country_code) References
+country(country_code) ON DELETE CASCADE
+): Running...
+[14, 20:42:16] CREATE TABLE population(
+
+country_code VARCHAR(10) NOT NULL,
+pop_year INT NOT NULL,
+life_exp INT,
+num_pop INT,
+pop_density REAL,
+
+PRIMARY KEY (country_code, pop_year),
+Foreign Key (country_code) References
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[15, 20:42:16] CREATE TABLE s_deaths(
+
+country_code VARCHAR(10) NOT NULL,
+death_stat_year INT NOT NULL,
+percentage_among_all_deaths REAL,
+
+PRIMARY KEY (country_code, death_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): Running...
+[15, 20:42:16] CREATE TABLE s_deaths(
+
+country_code VARCHAR(10) NOT NULL,
+death_stat_year INT NOT NULL,
+percentage_among_all_deaths REAL,
+
+PRIMARY KEY (country_code, death_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[16, 20:42:16] CREATE TABLE smoker(
+
+country_code VARCHAR(10) NOT NULL,
+smoker_stat_year INT NOT NULL,
+percentage_among_all_adults REAL,
+
+PRIMARY KEY (country_code, smoker_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): Running...
+[16, 20:42:16] CREATE TABLE smoker(
+
+country_code VARCHAR(10) NOT NULL,
+smoker_stat_year INT NOT NULL,
+percentage_among_all_adults REAL,
+
+PRIMARY KEY (country_code, smoker_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[17, 20:42:16] CREATE TABLE located(
+
+continent_code VARCHAR(5) NOT NULL,
+country_code VARCHAR(5) NOT NULL,
+
+PRIMARY KEY (country_code), # each country can at most one continent, whereas a continent can have many countries
+
+FOREIGN KEY (continent_code) REFERENCES
+continent(continent_code) ON DELETE CASCADE,
+
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): Running...
+[17, 20:42:16] CREATE TABLE located(
+
+continent_code VARCHAR(5) NOT NULL,
+country_code VARCHAR(5) NOT NULL,
+
+PRIMARY KEY (country_code), # each country can at most one continent, whereas a continent can have many countries
+
+FOREIGN KEY (continent_code) REFERENCES
+continent(continent_code) ON DELETE CASCADE,
+
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[1, 20:44:46] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[1, 20:44:46] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[2, 20:44:46] SHOW DATABASES: Executing 
+[2, 20:44:46] SHOW DATABASES: OK
+[3, 20:44:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 20:44:52] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 20:44:52] SHOW COLUMNS FROM `CS306`.`country`: Executing 
+[4, 20:44:52] SHOW COLUMNS FROM `CS306`.`country`: OK
+[5, 20:45:18] PREPARE stmt FROM 'INSERT INTO `CS306`.`country` (`country_code`,`country_name`) VALUES(?,?)': Executing 
+[5, 20:45:18] PREPARE stmt FROM 'INSERT INTO `CS306`.`country` (`country_code`,`country_name`) VALUES(?,?)': OK
+[6, 20:45:18] DEALLOCATE PREPARE stmt: Executing 
+[6, 20:45:18] DEALLOCATE PREPARE stmt: OK
+[7, 20:45:33] SELECT * FROM COUNTRY
+LIMIT 0, 1000
+: Running...
+[7, 20:45:33] SELECT * FROM COUNTRY
+LIMIT 0, 1000
+: Fetching...
+[7, 20:45:33] SELECT * FROM COUNTRY
+LIMIT 0, 1000
+: 237 row(s) returned
+[8, 20:47:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[8, 20:47:11] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[9, 20:47:11] SHOW DATABASES: Executing 
+[9, 20:47:11] SHOW DATABASES: OK
+[10, 20:47:15] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[10, 20:47:15] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[11, 20:47:15] SHOW COLUMNS FROM `CS306`.`country`: Executing 
+[11, 20:47:15] SHOW COLUMNS FROM `CS306`.`country`: OK
+[12, 21:17:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[12, 21:17:30] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[13, 21:17:30] SHOW DATABASES: Executing 
+[13, 21:17:30] SHOW DATABASES: OK
+[14, 21:17:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[14, 21:17:33] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[15, 21:17:33] SHOW COLUMNS FROM `CS306`.`continent`: Executing 
+[15, 21:17:33] SHOW COLUMNS FROM `CS306`.`continent`: OK
+[16, 21:18:20] PREPARE stmt FROM 'INSERT INTO `CS306`.`continent` (`continent_name`,`continent_code`) VALUES(?,?)': Executing 
+[16, 21:18:20] PREPARE stmt FROM 'INSERT INTO `CS306`.`continent` (`continent_name`,`continent_code`) VALUES(?,?)': OK
+[17, 21:18:20] DEALLOCATE PREPARE stmt: Executing 
+[17, 21:18:20] DEALLOCATE PREPARE stmt: OK
+[18, 21:18:43] SELECT * FROM CONTINENTS
+LIMIT 0, 1000
+: Running...
+[18, 21:18:43] SELECT * FROM CONTINENTS
+LIMIT 0, 1000
+: Error Code: 1146. Table 'cs306.continents' doesn't exist
+[19, 21:18:51] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: Running...
+[19, 21:18:51] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: Fetching...
+[19, 21:18:51] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: 8 row(s) returned
+[20, 21:19:35] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: Running...
+[20, 21:19:35] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: Fetching...
+[20, 21:19:35] SELECT * FROM CONTINENT
+LIMIT 0, 1000
+: 7 row(s) returned
+[21, 21:20:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[21, 21:20:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[22, 21:20:05] SHOW DATABASES: Executing 
+[22, 21:20:05] SHOW DATABASES: OK
+[23, 21:20:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[23, 21:20:07] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[24, 21:20:07] SHOW COLUMNS FROM `CS306`.`located`: Executing 
+[24, 21:20:07] SHOW COLUMNS FROM `CS306`.`located`: OK
+[25, 21:20:31] PREPARE stmt FROM 'INSERT INTO `CS306`.`located` (`country_code`,`continent_code`) VALUES(?,?)': Executing 
+[25, 21:20:31] PREPARE stmt FROM 'INSERT INTO `CS306`.`located` (`country_code`,`continent_code`) VALUES(?,?)': OK
+[26, 21:20:31] DEALLOCATE PREPARE stmt: Executing 
+[26, 21:20:31] DEALLOCATE PREPARE stmt: OK
+[27, 21:20:42] SELECT * FROM located
+LIMIT 0, 1000
+: Running...
+[27, 21:20:42] SELECT * FROM located
+LIMIT 0, 1000
+: Fetching...
+[27, 21:20:42] SELECT * FROM located
+LIMIT 0, 1000
+: 237 row(s) returned
+[28, 21:24:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[28, 21:24:45] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[29, 21:24:45] SHOW DATABASES: Executing 
+[29, 21:24:45] SHOW DATABASES: OK
+[30, 21:24:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[30, 21:24:51] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[31, 21:24:51] SHOW COLUMNS FROM `CS306`.`continent`: Executing 
+[31, 21:24:51] SHOW COLUMNS FROM `CS306`.`continent`: OK
+[32, 21:39:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[32, 21:39:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[33, 21:39:31] SHOW DATABASES: Executing 
+[33, 21:39:31] SHOW DATABASES: OK
+[34, 21:39:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[34, 21:39:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[35, 21:39:34] SHOW COLUMNS FROM `CS306`.`population`: Executing 
+[35, 21:39:34] SHOW COLUMNS FROM `CS306`.`population`: OK
+[36, 21:40:09] PREPARE stmt FROM 'INSERT INTO `CS306`.`population` (`pop_year`,`num_pop`,`country_code`) VALUES(?,?,?)': Executing 
+[36, 21:40:09] PREPARE stmt FROM 'INSERT INTO `CS306`.`population` (`pop_year`,`num_pop`,`country_code`) VALUES(?,?,?)': OK
+[37, 21:41:20] DEALLOCATE PREPARE stmt: Executing 
+[37, 21:41:20] DEALLOCATE PREPARE stmt: OK
+[38, 21:41:34] SELECT * FROM population
+LIMIT 0, 1000
+: Running...
+[38, 21:41:34] SELECT * FROM population
+LIMIT 0, 1000
+: Fetching...
+[38, 21:41:34] SELECT * FROM population
+LIMIT 0, 1000
+: 1000 row(s) returned
+[39, 21:42:38] SELECT * FROM population WHERE country_code = "BEL"
+LIMIT 0, 1000
+: Running...
+[39, 21:42:38] SELECT * FROM population WHERE country_code = "BEL"
+LIMIT 0, 1000
+: Fetching...
+[39, 21:42:38] SELECT * FROM population WHERE country_code = "BEL"
+LIMIT 0, 1000
+: 42 row(s) returned
+[40, 21:42:50] SELECT * FROM population WHERE country_code = "ZWE"
+LIMIT 0, 1000
+: Running...
+[40, 21:42:50] SELECT * FROM population WHERE country_code = "ZWE"
+LIMIT 0, 1000
+: Fetching...
+[40, 21:42:50] SELECT * FROM population WHERE country_code = "ZWE"
+LIMIT 0, 1000
+: 42 row(s) returned
+[41, 21:46:41] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[41, 21:46:42] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[42, 21:46:42] SHOW DATABASES: Executing 
+[42, 21:46:42] SHOW DATABASES: OK
+[43, 21:46:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[43, 21:46:43] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[44, 21:46:43] SHOW COLUMNS FROM `CS306`.`population`: Executing 
+[44, 21:46:43] SHOW COLUMNS FROM `CS306`.`population`: OK
+[45, 21:47:03] PREPARE stmt FROM 'INSERT INTO `CS306`.`population` (`country_code`,`pop_year`,`life_exp`) VALUES(?,?,?)': Executing 
+[45, 21:47:03] PREPARE stmt FROM 'INSERT INTO `CS306`.`population` (`country_code`,`pop_year`,`life_exp`) VALUES(?,?,?)': OK
+[46, 21:47:25] DEALLOCATE PREPARE stmt: Executing 
+[46, 21:47:25] DEALLOCATE PREPARE stmt: OK
+[47, 21:49:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[47, 21:49:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[48, 21:49:31] SHOW DATABASES: Executing 
+[48, 21:49:31] SHOW DATABASES: OK
+[49, 21:49:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[49, 21:49:39] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[50, 21:49:39] SHOW TABLES FROM `CS306` like 'life-expectancy': Executing 
+[50, 21:49:39] SHOW TABLES FROM `CS306` like 'life-expectancy': OK
+[51, 21:50:24]  CREATE TABLE `CS306`.`life-expectancy` (`Code` text, `Year` bigint, `Life expectancy at birth (historical)` double): Executing 
+[51, 21:50:24]  CREATE TABLE `CS306`.`life-expectancy` (`Code` text, `Year` bigint, `Life expectancy at birth (historical)` double): OK
+[52, 21:50:24] PREPARE stmt FROM 'INSERT INTO `CS306`.`life-expectancy` (`Code`,`Year`,`Life expectancy at birth (historical)`) VALUES(?,?,?)': Executing 
+[52, 21:50:24] PREPARE stmt FROM 'INSERT INTO `CS306`.`life-expectancy` (`Code`,`Year`,`Life expectancy at birth (historical)`) VALUES(?,?,?)': OK
+[53, 21:51:36] DEALLOCATE PREPARE stmt: Executing 
+[53, 21:51:36] DEALLOCATE PREPARE stmt: OK
+[54, 21:52:27] SELECT * FROM life-expectancy: Running...
+[54, 21:52:27] SELECT * FROM life-expectancy: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-expectancy' at line 1
+[55, 21:53:24] Apply changes to lifeExpectancy: Applying object changes ...
+[55, 21:53:26] Applying changes to lifeExpectancy...: 
+[55, 21:53:26] : Changes applied to lifeExpectancy
+[55, 21:53:27] Apply changes to lifeExpectancy: Changes applied
+[56, 21:53:34] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: Running...
+[56, 21:53:34] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: Fetching...
+[56, 21:53:34] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: 1000 row(s) returned
+[57, 21:57:59] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Running...
+[57, 21:57:59] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Fetching...
+[57, 21:57:59] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: 1000 row(s) returned
+[58, 21:58:43] Apply changes to lifeExpectancy: Applying object changes ...
+[58, 21:58:46] Applying changes to lifeExpectancy...: 
+[58, 21:58:46] : Changes applied to lifeExpectancy
+[58, 21:58:47] Apply changes to lifeExpectancy: Changes applied
+[59, 21:58:54] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Running...
+[59, 21:58:54] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Fetching...
+[59, 21:58:54] SELECT * FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: 1000 row(s) returned
+[60, 21:59:50] SELECT population.country_code, population.pop_year, population.pop_density FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Running...
+[60, 21:59:50] SELECT population.country_code, population.pop_year, population.pop_density FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Fetching...
+[60, 21:59:50] SELECT population.country_code, population.pop_year, population.pop_density FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: 1000 row(s) returned
+[61, 22:00:53] SELECT population.country_code, population.pop_year, population.pop_density, lifeExpectancy.life_exp FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Running...
+[61, 22:00:53] SELECT population.country_code, population.pop_year, population.pop_density, lifeExpectancy.life_exp FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: Fetching...
+[61, 22:00:53] SELECT population.country_code, population.pop_year, population.pop_density, lifeExpectancy.life_exp FROM population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year
+LIMIT 0, 1000
+: 1000 row(s) returned
+[62, 22:04:34] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.country_code, population.pop_year = lifeExpectancy.pop_year, population.life_exp = lifeExpectancy.life_exp: Running...
+[62, 22:04:34] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.country_code, population.pop_year = lifeExpectancy.pop_year, population.life_exp = lifeExpectancy.life_exp: Error Code: 1054. Unknown column 'LifeExpectancy.country_code' in 'field list'
+[63, 22:05:01] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.Code, population.pop_year = lifeExpectancy.Year, population.life_exp = lifeExpectancy.life_exp: Running...
+[63, 22:05:01] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.Code, population.pop_year = lifeExpectancy.Year, population.life_exp = lifeExpectancy.life_exp: 9828 row(s) affected
+Rows matched: 9828  Changed: 9828  Warnings: 0
+[64, 22:05:20] SELECT * FROM population
+LIMIT 0, 1000
+: Running...
+[64, 22:05:20] SELECT * FROM population
+LIMIT 0, 1000
+: Fetching...
+[64, 22:05:20] SELECT * FROM population
+LIMIT 0, 1000
+: 1000 row(s) returned
+[65, 22:05:41] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: Running...
+[65, 22:05:41] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: Fetching...
+[65, 22:05:41] SELECT * FROM lifeExpectancy
+LIMIT 0, 1000
+: 1000 row(s) returned
+[66, 22:06:22] Apply changes to population: Applying object changes ...
+[66, 22:06:25] Applying changes to population...: 
+[66, 22:06:25] : Changes applied to population
+[66, 22:06:27] Apply changes to population: Changes applied
+[67, 22:06:55] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.Code, population.pop_year = lifeExpectancy.Year, population.life_exp = lifeExpectancy.life_exp: Running...
+[67, 22:06:55] UPDATE population INNER JOIN lifeExpectancy ON population.country_code = lifeExpectancy.Code AND population.pop_year = lifeExpectancy.Year SET population.country_code = LifeExpectancy.Code, population.pop_year = lifeExpectancy.Year, population.life_exp = lifeExpectancy.life_exp: 8864 row(s) affected
+Rows matched: 9828  Changed: 8864  Warnings: 0
+[68, 22:07:09] SELECT * FROM population
+LIMIT 0, 1000
+: Running...
+[68, 22:07:09] SELECT * FROM population
+LIMIT 0, 1000
+: Fetching...
+[68, 22:07:09] SELECT * FROM population
+LIMIT 0, 1000
+: 1000 row(s) returned
+[69, 22:11:59] DROP TABLE lifeExpectancy: Running...
+[69, 22:11:59] DROP TABLE lifeExpectancy: 0 row(s) affected
+[70, 22:15:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[70, 22:15:58] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[71, 22:15:58] SHOW DATABASES: Executing 
+[71, 22:15:58] SHOW DATABASES: OK
+[72, 22:16:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[72, 22:16:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[73, 22:16:04] SHOW TABLES FROM `CS306` like 'populationdensity': Executing 
+[73, 22:16:04] SHOW TABLES FROM `CS306` like 'populationdensity': OK
+[74, 22:17:03]  CREATE TABLE `CS306`.`populationdensity` (`Code` text, `Year` int, `Population density` double): Executing 
+[74, 22:17:03]  CREATE TABLE `CS306`.`populationdensity` (`Code` text, `Year` int, `Population density` double): OK
+[75, 22:17:03] PREPARE stmt FROM 'INSERT INTO `CS306`.`populationdensity` (`Code`,`Year`,`Population density`) VALUES(?,?,?)': Executing 
+[75, 22:17:03] PREPARE stmt FROM 'INSERT INTO `CS306`.`populationdensity` (`Code`,`Year`,`Population density`) VALUES(?,?,?)': OK
+[76, 22:18:08] DEALLOCATE PREPARE stmt: Executing 
+[76, 22:18:08] DEALLOCATE PREPARE stmt: OK
+[77, 22:19:21] SELECT * FROM populationdensity
+LIMIT 0, 1000
+: Running...
+[77, 22:19:21] SELECT * FROM populationdensity
+LIMIT 0, 1000
+: Fetching...
+[77, 22:19:21] SELECT * FROM populationdensity
+LIMIT 0, 1000
+: 1000 row(s) returned
+[78, 22:20:13] Apply changes to populationdensity: Applying object changes ...
+[78, 22:20:23] Applying changes to populationdensity...: 
+[78, 22:20:23] : Changes applied to populationdensity
+[78, 22:20:25] Apply changes to populationdensity: Changes applied
+[79, 22:20:47] UPDATE population INNER JOIN populationdensity ON population.country_code = populationdensity.Code AND population.pop_year = populationdensity.Year SET population.country_code = populationdensity.Code, population.pop_year = populationdensity.Year, population.pop_density = populationdensity.popd: Running...
+[79, 22:20:48] UPDATE population INNER JOIN populationdensity ON population.country_code = populationdensity.Code AND population.pop_year = populationdensity.Year SET population.country_code = populationdensity.Code, population.pop_year = populationdensity.Year, population.pop_density = populationdensity.popd: 8946 row(s) affected
+Rows matched: 8946  Changed: 8946  Warnings: 0
+[80, 22:20:57] SELECT * FROM population
+LIMIT 0, 1000
+: Running...
+[80, 22:20:57] SELECT * FROM population
+LIMIT 0, 1000
+: Fetching...
+[80, 22:20:57] SELECT * FROM population
+LIMIT 0, 1000
+: 1000 row(s) returned
+[81, 22:23:08] DROP TABLE populationdensity: Running...
+[81, 22:23:08] DROP TABLE populationdensity: 0 row(s) affected
+[82, 11:59:56] SELECT * FROM population
+LIMIT 0, 1000
+: Running...
+[82, 11:59:56] SELECT * FROM population
+LIMIT 0, 1000
+: Fetching...
+[82, 11:59:56] SELECT * FROM population
+LIMIT 0, 1000
+: 1000 row(s) returned
+[83, 12:01:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[83, 12:01:31] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[84, 12:01:31] SHOW DATABASES: Executing 
+[84, 12:01:31] SHOW DATABASES: OK
+[85, 12:01:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[85, 12:01:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[86, 12:01:34] SHOW COLUMNS FROM `CS306`.`smoker`: Executing 
+[86, 12:01:34] SHOW COLUMNS FROM `CS306`.`smoker`: OK
+[87, 12:02:04] PREPARE stmt FROM 'INSERT INTO `CS306`.`smoker` (`country_code`,`smoker_stat_year`,`percentage_among_all_adults`) VALUES(?,?,?)': Executing 
+[87, 12:02:04] PREPARE stmt FROM 'INSERT INTO `CS306`.`smoker` (`country_code`,`smoker_stat_year`,`percentage_among_all_adults`) VALUES(?,?,?)': OK
+[88, 12:02:07] DEALLOCATE PREPARE stmt: Executing 
+[88, 12:02:07] DEALLOCATE PREPARE stmt: OK
+[89, 12:02:31] SELECT * FROM smoker
+LIMIT 0, 1000
+: Running...
+[89, 12:02:31] SELECT * FROM smoker
+LIMIT 0, 1000
+: Fetching...
+[89, 12:02:31] SELECT * FROM smoker
+LIMIT 0, 1000
+: 1000 row(s) returned
+[90, 12:03:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[90, 12:03:04] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[91, 12:03:04] SHOW DATABASES: Executing 
+[91, 12:03:04] SHOW DATABASES: OK
+[92, 12:03:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[92, 12:03:05] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[93, 12:03:05] SHOW COLUMNS FROM `CS306`.`s_deaths`: Executing 
+[93, 12:03:05] SHOW COLUMNS FROM `CS306`.`s_deaths`: OK
+[94, 12:03:18] PREPARE stmt FROM 'INSERT INTO `CS306`.`s_deaths` (`country_code`,`death_stat_year`,`percentage_among_all_deaths`) VALUES(?,?,?)': Executing 
+[94, 12:03:18] PREPARE stmt FROM 'INSERT INTO `CS306`.`s_deaths` (`country_code`,`death_stat_year`,`percentage_among_all_deaths`) VALUES(?,?,?)': OK
+[95, 12:04:07] DEALLOCATE PREPARE stmt: Executing 
+[95, 12:04:07] DEALLOCATE PREPARE stmt: OK
+[1, 15:02:24] CREATE TABLE M_Disorder(
+
+country_code VARCHAR(10) NOT NULL,
+mental_health_stat_year INT NOT NULL,
+depression_rate REAL,
+
+PRIMARY KEY (country_code, mental_health_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): Running...
+[1, 15:02:24] CREATE TABLE M_Disorder(
+
+country_code VARCHAR(10) NOT NULL,
+mental_health_stat_year INT NOT NULL,
+depression_rate REAL,
+
+PRIMARY KEY (country_code, mental_health_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[2, 15:02:28] CREATE TABLE Taxes(
+
+country_code VARCHAR(10) NOT NULL,
+tobacco_stat_year INT NOT NULL,
+percentage_increase_tobacco INT,
+
+PRIMARY KEY (country_code, tobacco_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): Running...
+[2, 15:02:28] CREATE TABLE Taxes(
+
+country_code VARCHAR(10) NOT NULL,
+tobacco_stat_year INT NOT NULL,
+percentage_increase_tobacco INT,
+
+PRIMARY KEY (country_code, tobacco_stat_year),
+FOREIGN KEY (country_code) REFERENCES
+country(country_code) ON DELETE CASCADE
+): 0 row(s) affected
+[3, 18:46:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[3, 18:46:34] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[4, 18:46:34] SHOW DATABASES: Executing 
+[4, 18:46:34] SHOW DATABASES: OK
+[5, 18:46:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[5, 18:46:40] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[6, 18:46:40] SHOW COLUMNS FROM `CS306`.`taxes`: Executing 
+[6, 18:46:40] SHOW COLUMNS FROM `CS306`.`taxes`: OK
+[7, 18:47:01] PREPARE stmt FROM 'INSERT INTO `CS306`.`taxes` (`country_code`,`tobacco_stat_year`,`percentage_increase_tobacco`) VALUES(?,?,?)': Executing 
+[7, 18:47:01] PREPARE stmt FROM 'INSERT INTO `CS306`.`taxes` (`country_code`,`tobacco_stat_year`,`percentage_increase_tobacco`) VALUES(?,?,?)': OK
+[8, 18:47:07] DEALLOCATE PREPARE stmt: Executing 
+[8, 18:47:07] DEALLOCATE PREPARE stmt: OK
+[9, 18:48:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[9, 18:48:10] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[10, 18:48:10] SHOW DATABASES: Executing 
+[10, 18:48:10] SHOW DATABASES: OK
+[11, 18:48:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': Executing 
+[11, 18:48:16] SHOW SESSION VARIABLES LIKE 'lower_case_table_names': OK
+[12, 18:48:16] SHOW COLUMNS FROM `CS306`.`m_disorder`: Executing 
+[12, 18:48:16] SHOW COLUMNS FROM `CS306`.`m_disorder`: OK
+[13, 18:48:31] PREPARE stmt FROM 'INSERT INTO `CS306`.`m_disorder` (`country_code`,`mental_health_stat_year`,`depression_rate`) VALUES(?,?,?)': Executing 
+[13, 18:48:31] PREPARE stmt FROM 'INSERT INTO `CS306`.`m_disorder` (`country_code`,`mental_health_stat_year`,`depression_rate`) VALUES(?,?,?)': OK
+[14, 18:49:29] DEALLOCATE PREPARE stmt: Executing 
+[14, 18:49:29] DEALLOCATE PREPARE stmt: OK
