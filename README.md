@@ -1,4 +1,6 @@
 # CS306 Database Systems Course Project: Hasta La Vista Baby
+### Overview
+This repository contains our group project for CS 306 - Advanced Database Systems. The project revolves around designing and implementing an SQL database to analyze and manage data related to tobacco usage across the world. Our database aims to provide insights into the prevalence, patterns, and impact of tobacco consumption in different regions and countries. Project is poorly structured due to the assigments being revealed in parts. However, this project might be a inspiring example of an mid-level SQL database.
 
 # Smoking Percentage in Adults Dataset
 
